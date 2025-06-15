@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane1" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game_math.HelloController">
+   <children>
+      <AnchorPane fx:id="ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="0.57954546177026">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6439024390243903">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Button id="cnp" fx:id="cnp" alignment="CENTER" layoutX="231.0" layoutY="275.0" mnemonicParsing="false" onAction="#setPlayerName" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Create new player" textAlignment="CENTER" textFill="#09a419">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.05882352963089943" green="0.48235294222831726" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <font>
+                  <Font name="Cooper Black" size="13.0" />
+               </font></Button>
+            <TextField fx:id="inp1" alignment="CENTER" layoutX="211.0" layoutY="237.0" prefHeight="26.0" prefWidth="179.0" promptText="Enter player name here" style="-fx-background-color: #000000; -fx-background-radius: 0;" stylesheets="@style.css">
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.05882352963089943" green="0.48235294222831726" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <Button id="play" fx:id="play" layoutX="277.0" layoutY="313.0" mnemonicParsing="false" onAction="#switchToPlay" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Play" textFill="#09a419">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.05882352963089943" green="0.48235294222831726" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <font>
+                  <Font name="Cooper Black" size="13.0" />
+               </font></Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="93.0" layoutX="198.0" layoutY="34.0" strokeType="INSIDE" width="204.0">
+               <stroke>
+                  <LinearGradient endX="0.8068180951205166" endY="0.28787880232839874">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6439024390243903">
+                           <color>
+                              <Color opacity="0.6960486173629761" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Rectangle>
+            <Text fontSmoothingType="LCD" layoutX="208.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1 " textAlignment="CENTER" wrappingWidth="79.34222412109375">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068180951205166" endY="0.30303030303030304">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="208.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2" textAlignment="CENTER" wrappingWidth="72.94219970703125">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068180951205166" endY="0.30303030303030304">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Line endX="214.0" endY="-11.000015258789062" layoutX="86.0" layoutY="138.0" startX="214.0" startY="-104.00001525878906">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1340000033378601" green="0.6164000034332275" blue="0.6700000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.1340000033378601" green="0.6164000034332275" blue="0.6700000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6439024390243903">
+                           <color>
+                              <Color opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Line>
+            <Line endX="100.0" layoutX="301.0" layoutY="78.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.49242423790873907" endY="0.08712125547004469" startX="0.6590908946412983" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1340000033378601" green="0.6164000034332275" blue="0.6700000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.1340000033378601" green="0.6164000034332275" blue="0.6700000166893005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6439024390243903">
+                           <color>
+                              <Color opacity="0.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Line>
+            <Text fx:id="pl1" fontSmoothingType="LCD" layoutX="299.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.74224853515625">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068180951205166" endY="0.30303030303030304">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fx:id="pl2" fontSmoothingType="LCD" layoutX="299.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="101.74224853515625">
+               <font>
+                  <Font name="OCR A Extended" size="14.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8068180951205166" endY="0.30303030303030304">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.529411792755127" green="0.054901961237192154" blue="0.46666666865348816" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fx:id="warn" fill="RED" layoutX="190.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Enter Player Names Before Playing!" textAlignment="CENTER" visible="false" wrappingWidth="218.6484375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="warn1" fill="RED" layoutX="190.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player names cannot be same" textAlignment="CENTER" visible="false" wrappingWidth="218.6484375">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="-85.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 270;" text="PING PONG" textAlignment="CENTER" wrappingWidth="295.8017578125">
+               <font>
+                  <Font name="Curlz MT" size="50.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5894736647605896" green="0.04803118854761124" blue="0.5263053774833679" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.8999999761581421" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Button id="cnp" fx:id="cnp1" alignment="CENTER" layoutX="519.0" layoutY="20.0" mnemonicParsing="false" onAction="#restartWithDiffPlayers" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" style="-fx-background-color: #000000; -fx-background-radius: 30;" text="Rename" textAlignment="CENTER" textFill="#21cc64">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <font>
+                  <Font name="OCR A Extended" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

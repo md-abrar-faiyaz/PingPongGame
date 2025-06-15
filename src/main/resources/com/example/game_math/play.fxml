@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="centerPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game_math.HelloController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="2.9710311889648438" prefHeight="513.0" prefWidth="602.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="376.0" layoutX="35.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="531.0">
+               <fill>
+                  <LinearGradient endX="0.140151504314307" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.17473702132701874" green="0.12319999933242798" blue="0.2800000011920929" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="532.0" layoutX="-7.0" layoutY="-7.0" strokeType="INSIDE" strokeWidth="15.0" width="617.0">
+               <stroke>
+                  <LinearGradient endX="0.8106060606060606" endY="0.014204559904156103">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="124.0" layoutX="-6.0" layoutY="388.0" strokeWidth="3.0" width="608.0">
+               <fill>
+                  <LinearGradient endX="0.791666658990311" endY="1.0" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Rectangle>
+            <Rectangle fx:id="rLeft" arcHeight="5.0" arcWidth="5.0" fill="#229dab" height="63.0" layoutX="47.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="8.0" />
+            <Rectangle fx:id="rRight" arcHeight="5.0" arcWidth="5.0" fill="#870e77" height="63.0" layoutX="544.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.2" width="8.0" />
+            <Line fx:id="lineR1" endX="-100.0" endY="17.800003051757812" layoutX="644.0" layoutY="171.0" startX="-100.00006103515625" startY="0.9999847412109375" stroke="#00ff2f00" />
+            <Line fx:id="lineR2" endX="-100.0" endY="17.800003051757812" layoutX="643.0" layoutY="215.0" startX="-100.0" stroke="#00ff2f00" />
+            <Line fx:id="lineL1" endX="-100.0" endY="17.800003051757812" layoutX="155.0" layoutY="170.0" startX="-99.99998474121094" startY="2.8000030517578125" stroke="#ffffff00" />
+            <Line fx:id="lineL2" endX="-100.0" endY="17.800003051757812" layoutX="155.0" layoutY="215.0" startX="-100.0" startY="0.9999847412109375" stroke="#ffffff00" />
+            <Circle fx:id="ball" layoutX="73.0" layoutY="202.0" radius="9.0" stroke="#1c0eb1" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill></Circle>
+            <Button fx:id="beginBtn" alignment="CENTER" layoutX="262.0" layoutY="182.0" mnemonicParsing="false" onAction="#runTimeline" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" prefHeight="40.0" prefWidth="74.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="Begin">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Line fx:id="lineLmid" endX="-149.49998474121094" endY="79.5" layoutX="205.0" layoutY="136.0" startX="-149.2928924560547" startY="52.507110595703125" stroke="#ffffff00" />
+            <Line fx:id="lineRmid" endX="-149.79998779296875" endY="79.20001220703125" layoutX="694.0" layoutY="136.0" startX="-149.8000030517578" startY="56.19999694824219" stroke="#00ff2f00" />
+            <Line fx:id="rightBoundary" endX="118.5999755859375" endY="293.20001220703125" layoutX="453.0" layoutY="91.0" startX="118.5999755859375" startY="-73.19999694824219" stroke="#229cac" strokeWidth="10.0" />
+            <Line fx:id="leftBoundary" endX="118.5999755859375" endY="293.20001220703125" layoutX="-89.0" layoutY="91.0" startX="118.5999755859375" startY="-73.19999694824219" stroke="#870e77" strokeWidth="10.0" />
+            <Line fx:id="topLine" endX="493.29998779296875" layoutX="108.0" layoutY="13.0" startX="-108.0" startY="2.86102294921875E-6" strokeWidth="0.0" />
+            <Line fx:id="botLine" endX="487.49285888671875" endY="-2.0709915161132812" layoutX="115.0" layoutY="391.0" startX="-117.26392364501953" startY="-2.070946216583252" strokeWidth="0.0" />
+            <Text layoutX="266.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.26893938129598444" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="13.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="606.0">
+               <fill>
+                  <LinearGradient endX="0.7499999855503892" endY="1.0" startX="0.15909091089711044" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.6581426648721399">
+                           <color>
+                              <Color red="0.11192982643842697" green="0.11540351063013077" blue="0.11578947305679321" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#870e77" height="390.0" layoutX="-3.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="28.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#229cac" height="388.0" layoutX="575.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="29.0" />
+            <Button fx:id="beginBtn1" alignment="CENTER" layoutX="228.0" layoutY="140.0" mnemonicParsing="false" onAction="#restart" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="Restart" textAlignment="CENTER" visible="false">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="OCR A Extended" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="beginBtn2" alignment="CENTER" layoutX="208.0" layoutY="204.0" mnemonicParsing="false" onAction="#restartWithDiffPlayers" onMouseEntered="#mouseEnteredEffect" onMouseExited="#mouseExitedEffect" prefHeight="78.0" prefWidth="184.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="Restart with different players" textAlignment="CENTER" visible="false" wrapText="true">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.8901515092813607">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7097560975609755">
+                           <color>
+                              <Color red="0.13333334028720856" green="0.6117647290229797" blue="0.6745098233222961" opacity="0.9599999785423279" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c8b96" height="101.0" layoutX="485.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="116.0" />
+            <Text fx:id="pl2_name" fill="#870e77" layoutX="485.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player2" textAlignment="CENTER" wrappingWidth="116.00001525878906">
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="pl2_score" fill="#870e77" layoutX="539.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="-10.0" layoutX="612.0" layoutY="450.0" startX="-125.00001525878906" stroke="#229cac" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#59084b" height="101.0" layoutX="5.0" layoutY="403.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="116.0" />
+            <Text fx:id="pl1_name" fill="#229cac" layoutX="6.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player1" textAlignment="CENTER" wrappingWidth="116.0">
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="pl1_score" fill="#229cac" layoutX="58.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+               <font>
+                  <Font name="OCR A Extended" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="-10.0" layoutX="131.0" layoutY="451.0" startX="-125.00001525878906" stroke="#870e77" />
+            <Text fx:id="win_text" focusTraversable="true" layoutX="188.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is Victorious" textAlignment="CENTER" visible="false" wrappingWidth="226.93661499023438">
+               <font>
+                  <Font name="OCR A Extended" size="28.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.8106060606060606" endY="0.014204559904156103">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fx:id="winner" layoutX="185.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="226.93661499023438">
+               <font>
+                  <Font name="OCR A Extended" size="30.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="0.7765151659647623" endY="0.014204559904156103" startX="0.20833333333333334">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.5299999713897705" green="0.05299999937415123" blue="0.46522969007492065" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.13224171102046967" green="0.6105158925056458" blue="0.6736842393875122" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
