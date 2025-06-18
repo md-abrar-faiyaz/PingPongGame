@@ -1,6 +1,6 @@
 # Ping Pong (2D)
 ## A nostalgic game
-### It's basically a game which many of us have played in the early days. As a CSE stuent it is my first project on OOP and JavaFX.
+It's basically a game which many of us have played in the early days. As a CSE stuent it is my first project on OOP and JavaFX. For the left paddle use W A S D and for the right paddle use the arrow keys. If a player raches to 11 points, he wins.
 ---
 ## Installation
 - Prerquisites:
